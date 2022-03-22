@@ -6,19 +6,12 @@ public class Book {
     private final String NAME;
     private final String AUTHOR;
     private final int PAGES;
-    private String genre;
 
     // Constructor
     public Book(String name, String author, int pages) {
         this.NAME = name;
         this.AUTHOR = author;
         this.PAGES = pages;
-    }
-
-    // Constructor
-    public Book(String name, String author, int pages, String genre) {
-        this(name, author, pages);
-        this.genre = genre;
     }
 
     // Method Override for this object
@@ -29,7 +22,6 @@ public class Book {
     public String toString() {
         return "Book: " + this.NAME +
                 "\nAuthor: " + this.AUTHOR +
-                "\nPages: " + this.PAGES +
-                (this.genre != null ? "\nGenre: " + this.genre : "");
+                "\nPages: " + this.PAGES;
     }
 }

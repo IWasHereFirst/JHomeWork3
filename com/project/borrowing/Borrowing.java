@@ -10,13 +10,14 @@ public class Borrowing {
     // Fields
     private Book book;
     private Subscriber subscriber;
+    private LocalDate borrowDate;
     private LocalDate returnDate;
 
     // Constructor
-    public Borrowing(Book book, Subscriber subscriber, LocalDate returnDate) {
+    public Borrowing(Book book, Subscriber subscriber, LocalDate borrowDate) {
         this.book = book;
         this.subscriber = subscriber;
-        this.returnDate = returnDate;
+        this.borrowDate = borrowDate;
     }
 
     // Setter for returnDate

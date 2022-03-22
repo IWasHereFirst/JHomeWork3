@@ -4,17 +4,17 @@ public class SubscriberAddress {
 
     // Fields
     private String street;
-    private int zipcode;
+    private int streetNr;
     private String city;
     private String country;
-    private int id;
+    private int zipCode;
 
     // Constructor
-    public SubscriberAddress(String street, int zipcode, String city, String country, int id) {
+    public SubscriberAddress(String street, int streetNr, String city, String country, int zipCode) {
         this.street = street;
-        this.zipcode = zipcode;
+        this.streetNr = streetNr;
         this.city = city;
         this.country = country;
-        this.id = id;
+        this.zipCode = zipCode;
     }
 }
